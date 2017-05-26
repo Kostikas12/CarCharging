@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CarChargingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cars">
+          <Key>
+            <PropertyRef Name="ID_Car" />
+          </Key>
+          <Property Name="ID_Car" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Driver" Type="int" Nullable="false" />
+          <Property Name="CarType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CarBatteryLevel" Type="float" />
+          <Property Name="CarTimeToCharge" Type="float" />
+        </EntityType>
+        <EntityType Name="Chargers">
+          <Key>
+            <PropertyRef Name="ID_Charger" />
+          </Key>
+          <Property Name="ID_Charger" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ChargerName" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ChargerAddress" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ChargerGPS" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ChargerStatus" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NumAllPlaces" Type="int" Nullable="false" />
+          <Property Name="NumEmptyPlaces" Type="int" Nullable="false" />
+          <Property Name="NumOrderPlaces" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ChargingNow">
+          <Key>
+            <PropertyRef Name="ID_Charging" />
+          </Key>
+          <Property Name="ID_Charging" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Driver" Type="int" Nullable="false" />
+          <Property Name="ID_Car" Type="int" Nullable="false" />
+          <Property Name="ID_Charger" Type="int" Nullable="false" />
+          <Property Name="ProbabilitySecond" Type="float" Nullable="false" />
+          <Property Name="TimeStartCharging" Type="datetime" Nullable="false" />
+          <Property Name="TimeEndChargingExpect" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Drivers">
+          <Key>
+            <PropertyRef Name="ID_Driver" />
+          </Key>
+          <Property Name="ID_Driver" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DriverName" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="DriverLogin" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DriverPassword" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="DriverStatus" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Probability" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="ID_Order" />
+          </Key>
+          <Property Name="ID_Order" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Driver" Type="int" Nullable="false" />
+          <Property Name="ID_Car" Type="int" Nullable="false" />
+          <Property Name="ID_Charger" Type="int" Nullable="false" />
+          <Property Name="OrderStatus" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="OrderTime" Type="datetime" Nullable="false" />
+          <Property Name="TimeStartChargingExpect" Type="datetime" Nullable="false" />
+          <Property Name="TimeChargingExpect" Type="float" Nullable="false" />
+          <Property Name="TimeStartCharging" Type="datetime" />
+          <Property Name="TimeEndCharging" Type="datetime" />
+          <Property Name="TimeCharging" Type="float" />
+          <Property Name="Kilowatt" Type="float" />
+          <Property Name="ProbabilityOrder" Type="float" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Cars_Drivers">
+          <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+          <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Drivers">
+              <PropertyRef Name="ID_Driver" />
+            </Principal>
+            <Dependent Role="Cars">
+              <PropertyRef Name="ID_Driver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ChargingNow_Chargers">
+          <End Role="Chargers" Type="Self.Chargers" Multiplicity="1" />
+          <End Role="ChargingNow" Type="Self.ChargingNow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chargers">
+              <PropertyRef Name="ID_Charger" />
+            </Principal>
+            <Dependent Role="ChargingNow">
+              <PropertyRef Name="ID_Charger" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ChargingNow_Drivers">
+          <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+          <End Role="ChargingNow" Type="Self.ChargingNow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Drivers">
+              <PropertyRef Name="ID_Driver" />
+            </Principal>
+            <Dependent Role="ChargingNow">
+              <PropertyRef Name="ID_Driver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderNow_Chargers">
+          <End Role="Chargers" Type="Self.Chargers" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chargers">
+              <PropertyRef Name="ID_Charger" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ID_Charger" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderNow_Drivers">
+          <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Drivers">
+              <PropertyRef Name="ID_Driver" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ID_Driver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CarChargingModelStoreContainer">
+          <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Chargers" EntityType="Self.Chargers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChargingNow" EntityType="Self.ChargingNow" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Drivers" EntityType="Self.Drivers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
+            <End Role="Drivers" EntitySet="Drivers" />
+            <End Role="Cars" EntitySet="Cars" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ChargingNow_Chargers" Association="Self.FK_ChargingNow_Chargers">
+            <End Role="Chargers" EntitySet="Chargers" />
+            <End Role="ChargingNow" EntitySet="ChargingNow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ChargingNow_Drivers" Association="Self.FK_ChargingNow_Drivers">
+            <End Role="Drivers" EntitySet="Drivers" />
+            <End Role="ChargingNow" EntitySet="ChargingNow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderNow_Chargers" Association="Self.FK_OrderNow_Chargers">
+            <End Role="Chargers" EntitySet="Chargers" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderNow_Drivers" Association="Self.FK_OrderNow_Drivers">
+            <End Role="Drivers" EntitySet="Drivers" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CarChargingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cars">
+          <Key>
+            <PropertyRef Name="ID_Car" />
+          </Key>
+          <Property Name="ID_Car" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Driver" Type="Int32" Nullable="false" />
+          <Property Name="CarType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CarBatteryLevel" Type="Double" />
+          <Property Name="CarTimeToCharge" Type="Double" />
+          <NavigationProperty Name="Drivers" Relationship="Self.FK_Cars_Drivers" FromRole="Cars" ToRole="Drivers" />
+        </EntityType>
+        <EntityType Name="Chargers">
+          <Key>
+            <PropertyRef Name="ID_Charger" />
+          </Key>
+          <Property Name="ID_Charger" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ChargerName" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ChargerAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ChargerGPS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ChargerStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NumAllPlaces" Type="Int32" Nullable="false" />
+          <Property Name="NumEmptyPlaces" Type="Int32" Nullable="false" />
+          <Property Name="NumOrderPlaces" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ChargingNow" Relationship="Self.FK_ChargingNow_Chargers" FromRole="Chargers" ToRole="ChargingNow" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_OrderNow_Chargers" FromRole="Chargers" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="ChargingNows">
+          <Key>
+            <PropertyRef Name="ID_Charging" />
+          </Key>
+          <Property Name="ID_Charging" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Driver" Type="Int32" Nullable="false" />
+          <Property Name="ID_Car" Type="Int32" Nullable="false" />
+          <Property Name="ID_Charger" Type="Int32" Nullable="false" />
+          <Property Name="ProbabilitySecond" Type="Double" Nullable="false" />
+          <Property Name="TimeStartCharging" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TimeEndChargingExpect" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Chargers" Relationship="Self.FK_ChargingNow_Chargers" FromRole="ChargingNow" ToRole="Chargers" />
+          <NavigationProperty Name="Drivers" Relationship="Self.FK_ChargingNow_Drivers" FromRole="ChargingNow" ToRole="Drivers" />
+        </EntityType>
+        <EntityType Name="Drivers">
+          <Key>
+            <PropertyRef Name="ID_Driver" />
+          </Key>
+          <Property Name="ID_Driver" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DriverName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DriverLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DriverPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="DriverStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Probability" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Cars" Relationship="Self.FK_Cars_Drivers" FromRole="Drivers" ToRole="Cars" />
+          <NavigationProperty Name="ChargingNow" Relationship="Self.FK_ChargingNow_Drivers" FromRole="Drivers" ToRole="ChargingNow" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_OrderNow_Drivers" FromRole="Drivers" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="ID_Order" />
+          </Key>
+          <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Driver" Type="Int32" Nullable="false" />
+          <Property Name="ID_Car" Type="Int32" Nullable="false" />
+          <Property Name="ID_Charger" Type="Int32" Nullable="false" />
+          <Property Name="OrderStatus" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TimeStartChargingExpect" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TimeChargingExpect" Type="Double" Nullable="false" />
+          <Property Name="TimeStartCharging" Type="DateTime" Precision="3" />
+          <Property Name="TimeEndCharging" Type="DateTime" Precision="3" />
+          <Property Name="TimeCharging" Type="Double" />
+          <Property Name="Kilowatt" Type="Double" />
+          <Property Name="ProbabilityOrder" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Chargers" Relationship="Self.FK_OrderNow_Chargers" FromRole="Orders" ToRole="Chargers" />
+          <NavigationProperty Name="Drivers" Relationship="Self.FK_OrderNow_Drivers" FromRole="Orders" ToRole="Drivers" />
+        </EntityType>
+        <Association Name="FK_Cars_Drivers">
+          <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+          <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Drivers">
+              <PropertyRef Name="ID_Driver" />
+            </Principal>
+            <Dependent Role="Cars">
+              <PropertyRef Name="ID_Driver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ChargingNow_Chargers">
+          <End Role="Chargers" Type="Self.Chargers" Multiplicity="1" />
+          <End Role="ChargingNow" Type="CarChargingModel.ChargingNows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chargers">
+              <PropertyRef Name="ID_Charger" />
+            </Principal>
+            <Dependent Role="ChargingNow">
+              <PropertyRef Name="ID_Charger" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderNow_Chargers">
+          <End Role="Chargers" Type="Self.Chargers" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Chargers">
+              <PropertyRef Name="ID_Charger" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ID_Charger" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ChargingNow_Drivers">
+          <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+          <End Role="ChargingNow" Type="CarChargingModel.ChargingNows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Drivers">
+              <PropertyRef Name="ID_Driver" />
+            </Principal>
+            <Dependent Role="ChargingNow">
+              <PropertyRef Name="ID_Driver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderNow_Drivers">
+          <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Drivers">
+              <PropertyRef Name="ID_Driver" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ID_Driver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CarChargingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cars" EntityType="Self.Cars" />
+          <EntitySet Name="Chargers" EntityType="Self.Chargers" />
+          <EntitySet Name="ChargingNow" EntityType="CarChargingModel.ChargingNows" />
+          <EntitySet Name="Drivers" EntityType="Self.Drivers" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" />
+          <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
+            <End Role="Drivers" EntitySet="Drivers" />
+            <End Role="Cars" EntitySet="Cars" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ChargingNow_Chargers" Association="Self.FK_ChargingNow_Chargers">
+            <End Role="Chargers" EntitySet="Chargers" />
+            <End Role="ChargingNow" EntitySet="ChargingNow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderNow_Chargers" Association="Self.FK_OrderNow_Chargers">
+            <End Role="Chargers" EntitySet="Chargers" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ChargingNow_Drivers" Association="Self.FK_ChargingNow_Drivers">
+            <End Role="Drivers" EntitySet="Drivers" />
+            <End Role="ChargingNow" EntitySet="ChargingNow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderNow_Drivers" Association="Self.FK_OrderNow_Drivers">
+            <End Role="Drivers" EntitySet="Drivers" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CarChargingModelStoreContainer" CdmEntityContainer="CarChargingEntities">
+          <EntitySetMapping Name="Cars">
+            <EntityTypeMapping TypeName="CarChargingModel.Cars">
+              <MappingFragment StoreEntitySet="Cars">
+                <ScalarProperty Name="ID_Car" ColumnName="ID_Car" />
+                <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+                <ScalarProperty Name="CarType" ColumnName="CarType" />
+                <ScalarProperty Name="CarBatteryLevel" ColumnName="CarBatteryLevel" />
+                <ScalarProperty Name="CarTimeToCharge" ColumnName="CarTimeToCharge" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Chargers">
+            <EntityTypeMapping TypeName="CarChargingModel.Chargers">
+              <MappingFragment StoreEntitySet="Chargers">
+                <ScalarProperty Name="ID_Charger" ColumnName="ID_Charger" />
+                <ScalarProperty Name="ChargerName" ColumnName="ChargerName" />
+                <ScalarProperty Name="ChargerAddress" ColumnName="ChargerAddress" />
+                <ScalarProperty Name="ChargerGPS" ColumnName="ChargerGPS" />
+                <ScalarProperty Name="ChargerStatus" ColumnName="ChargerStatus" />
+                <ScalarProperty Name="NumAllPlaces" ColumnName="NumAllPlaces" />
+                <ScalarProperty Name="NumEmptyPlaces" ColumnName="NumEmptyPlaces" />
+                <ScalarProperty Name="NumOrderPlaces" ColumnName="NumOrderPlaces" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChargingNow">
+            <EntityTypeMapping TypeName="CarChargingModel.ChargingNows">
+              <MappingFragment StoreEntitySet="ChargingNow">
+                <ScalarProperty Name="ID_Charging" ColumnName="ID_Charging" />
+                <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+                <ScalarProperty Name="ID_Car" ColumnName="ID_Car" />
+                <ScalarProperty Name="ID_Charger" ColumnName="ID_Charger" />
+                <ScalarProperty Name="ProbabilitySecond" ColumnName="ProbabilitySecond" />
+                <ScalarProperty Name="TimeStartCharging" ColumnName="TimeStartCharging" />
+                <ScalarProperty Name="TimeEndChargingExpect" ColumnName="TimeEndChargingExpect" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Drivers">
+            <EntityTypeMapping TypeName="CarChargingModel.Drivers">
+              <MappingFragment StoreEntitySet="Drivers">
+                <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+                <ScalarProperty Name="DriverName" ColumnName="DriverName" />
+                <ScalarProperty Name="DriverLogin" ColumnName="DriverLogin" />
+                <ScalarProperty Name="DriverPassword" ColumnName="DriverPassword" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DriverStatus" ColumnName="DriverStatus" />
+                <ScalarProperty Name="Probability" ColumnName="Probability" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="CarChargingModel.Orders">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+                <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+                <ScalarProperty Name="ID_Car" ColumnName="ID_Car" />
+                <ScalarProperty Name="ID_Charger" ColumnName="ID_Charger" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+                <ScalarProperty Name="TimeStartChargingExpect" ColumnName="TimeStartChargingExpect" />
+                <ScalarProperty Name="TimeChargingExpect" ColumnName="TimeChargingExpect" />
+                <ScalarProperty Name="TimeStartCharging" ColumnName="TimeStartCharging" />
+                <ScalarProperty Name="TimeEndCharging" ColumnName="TimeEndCharging" />
+                <ScalarProperty Name="TimeCharging" ColumnName="TimeCharging" />
+                <ScalarProperty Name="Kilowatt" ColumnName="Kilowatt" />
+                <ScalarProperty Name="ProbabilityOrder" ColumnName="ProbabilityOrder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

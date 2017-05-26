@@ -1,0 +1,170 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Debug\CarCharging.exe.config
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Debug\CarCharging.mdf
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Debug\CarCharging_log.ldf
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Debug\CarCharging.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Debug\CarCharging.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlEnter.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlMain.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.Main.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlMenu.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlReg.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlSettings.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlMenuNewCar.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlRegOk.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlSettingsYesNo.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlMenuDelCar.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCharge.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging_Content.g.cs
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging_MarkupCompile.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.g.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.ControlLoad.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\Controls\ControlWLog.baml
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\Controls\ControlWLog.g.cs
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Debug\CarCharging.csprojResolveAssemblyReference.cache
+D:\reserve\CarCharging\bin\Debug\CarCharging.exe.config
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.exe
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.pdb
+D:\reserve\CarCharging\bin\Debug\CarCharging.mdf
+D:\reserve\CarCharging\bin\Debug\CarCharging_log.ldf
+D:\reserve\CarCharging\bin\Debug\CarCharging.exe
+D:\reserve\CarCharging\bin\Debug\CarCharging.pdb
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging_Content.g.cs
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging_MarkupCompile.cache
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.g.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlEnter.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlLoad.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMain.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMenu.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMenuDelCar.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMenuNewCar.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCharge.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlReg.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlRegOk.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlSettings.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlSettingsYesNo.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.Main.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.Properties.Resources.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.csproj.GenerateResource.Cache
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMenuCarsXml.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMainAbout.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlMenuUpdateCar.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlOrderChargeOk.resources
+D:\reserve\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.baml
+D:\reserve\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.g.cs
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrent.resources
+D:\reserve\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.baml
+D:\reserve\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.g.cs
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrentCalcel.resources
+D:\reserve\CarCharging\obj\x86\Debug\CarCharging.csprojResolveAssemblyReference.cache
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\bin\Debug\CarCharging.exe.config
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.exe
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.pdb
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\bin\Debug\CarCharging.mdf
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\bin\Debug\CarCharging_log.ldf
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\bin\Debug\CarCharging.exe
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\bin\Debug\CarCharging.pdb
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.baml
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.baml
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.g.cs
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.g.cs
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging_Content.g.cs
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging_MarkupCompile.cache
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.g.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrent.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuUpdateCar.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMainAbout.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuCarsXml.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlEnter.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlLoad.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMain.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenu.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuDelCar.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuNewCar.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCharge.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderChargeOk.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrentCalcel.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlReg.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlRegOk.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlSettings.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlSettingsYesNo.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.Main.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.Properties.Resources.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.csproj.GenerateResource.Cache
+D:\reserve\CarCharging\CarCharging\bin\Debug\CarCharging.exe.config
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.exe
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.pdb
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.baml
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.baml
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.g.cs
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.g.cs
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging_Content.g.cs
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging_MarkupCompile.cache
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.g.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrent.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuUpdateCar.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMainAbout.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuCarsXml.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlEnter.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlLoad.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMain.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenu.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuDelCar.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlMenuNewCar.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCharge.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderChargeOk.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrentCalcel.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlReg.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlRegOk.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlSettings.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.ControlSettingsYesNo.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.Main.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.Properties.Resources.resources
+D:\reserve\CarCharging\CarCharging\obj\x86\Debug\CarCharging.csproj.GenerateResource.Cache
+D:\reserve\CarCharging\CarCharging\bin\Debug\CarCharging.mdf
+D:\reserve\CarCharging\CarCharging\bin\Debug\CarCharging_log.ldf
+D:\reserve\CarCharging\CarCharging\bin\Debug\CarCharging.exe
+D:\reserve\CarCharging\CarCharging\bin\Debug\CarCharging.pdb
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging\CarCharging\obj\x86\Debug\CarCharging.csprojResolveAssemblyReference.cache
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\CarCharging.exe.config
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\CarCharging.exe
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\CarCharging.pdb
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\EntityFramework.dll
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\EntityFramework.SqlServer.dll
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\EntityFramework.xml
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.baml
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.baml
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\Controls\ControlSettingsGraph.g.cs
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\Controls\ControlLoadWPF.g.cs
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging_Content.g.cs
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging_MarkupCompile.cache
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.g.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrent.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMenuUpdateCar.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMainAbout.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMenuCarsXml.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlEnter.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlLoad.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMain.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMenu.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMenuDelCar.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlMenuNewCar.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCharge.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlOrderChargeOk.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlOrderCurrentCalcel.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlReg.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlRegOk.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlSettings.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.ControlSettingsYesNo.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.Main.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.Properties.Resources.resources
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.csproj.GenerateResource.Cache
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.exe
+D:\study\BUSINESS\IT WAY-\ИИТ БГУИР!\QQ\3 сессия\СВПП\курсовой\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.pdb
+D:\reserve\CarCharging ADO.NET\CarCharging\bin\Debug\CarCharging.exe.config
+D:\reserve\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.exe
+D:\reserve\CarCharging ADO.NET\CarCharging\obj\x86\Debug\CarCharging.pdb

@@ -1,0 +1,62 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Release\CarCharging.exe.config
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Release\CarCharging.mdf
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Release\CarCharging_log.ldf
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Release\CarCharging.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\bin\Release\CarCharging.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlEnter.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlMain.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlMenu.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlReg.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.Main.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging_Content.g.cs
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging_MarkupCompile.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.g.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlLoad.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlMenuDelCar.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlMenuNewCar.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlOrderCharge.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlRegOk.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlSettings.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\CarCharging.ControlSettingsYesNo.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\Controls\ControlWLog.baml
+C:\Users\User\Documents\Visual Studio 2010\Projects\QuickPark\CarCharging\obj\x86\Release\Controls\ControlWLog.g.cs
+D:\reserve\CarCharging\bin\Release\CarCharging.exe.config
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.exe
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.pdb
+D:\reserve\CarCharging\bin\Release\CarCharging.mdf
+D:\reserve\CarCharging\bin\Release\CarCharging_log.ldf
+D:\reserve\CarCharging\bin\Release\CarCharging.exe
+D:\reserve\CarCharging\bin\Release\CarCharging.pdb
+D:\reserve\CarCharging\obj\x86\Release\CarCharging_Content.g.cs
+D:\reserve\CarCharging\obj\x86\Release\CarCharging_MarkupCompile.cache
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.g.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMainAbout.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMenuCarsXml.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlEnter.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlLoad.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMain.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMenu.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMenuDelCar.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMenuNewCar.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlOrderCharge.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlReg.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlRegOk.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlSettings.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlSettingsYesNo.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.Main.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.Properties.Resources.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.csproj.GenerateResource.Cache
+D:\reserve\CarCharging\obj\x86\Release\Controls\ControlSettingsGraph.baml
+D:\reserve\CarCharging\obj\x86\Release\Controls\ControlLoadWPF.baml
+D:\reserve\CarCharging\obj\x86\Release\Controls\ControlSettingsGraph.g.cs
+D:\reserve\CarCharging\obj\x86\Release\Controls\ControlLoadWPF.g.cs
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlOrderCurrent.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlMenuUpdateCar.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlOrderChargeOk.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.ControlOrderCurrentCalcel.resources
+D:\reserve\CarCharging\obj\x86\Release\CarCharging.csprojResolveAssemblyReference.cache

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarChargingModelStoreContainer" CdmEntityContainer="CarChargingEntities">
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="CarChargingModel.Cars">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="ID_Car" ColumnName="ID_Car" />
+          <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+          <ScalarProperty Name="CarType" ColumnName="CarType" />
+          <ScalarProperty Name="CarBatteryLevel" ColumnName="CarBatteryLevel" />
+          <ScalarProperty Name="CarTimeToCharge" ColumnName="CarTimeToCharge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chargers">
+      <EntityTypeMapping TypeName="CarChargingModel.Chargers">
+        <MappingFragment StoreEntitySet="Chargers">
+          <ScalarProperty Name="ID_Charger" ColumnName="ID_Charger" />
+          <ScalarProperty Name="ChargerName" ColumnName="ChargerName" />
+          <ScalarProperty Name="ChargerAddress" ColumnName="ChargerAddress" />
+          <ScalarProperty Name="ChargerGPS" ColumnName="ChargerGPS" />
+          <ScalarProperty Name="ChargerStatus" ColumnName="ChargerStatus" />
+          <ScalarProperty Name="NumAllPlaces" ColumnName="NumAllPlaces" />
+          <ScalarProperty Name="NumEmptyPlaces" ColumnName="NumEmptyPlaces" />
+          <ScalarProperty Name="NumOrderPlaces" ColumnName="NumOrderPlaces" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChargingNow">
+      <EntityTypeMapping TypeName="CarChargingModel.ChargingNows">
+        <MappingFragment StoreEntitySet="ChargingNow">
+          <ScalarProperty Name="ID_Charging" ColumnName="ID_Charging" />
+          <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+          <ScalarProperty Name="ID_Car" ColumnName="ID_Car" />
+          <ScalarProperty Name="ID_Charger" ColumnName="ID_Charger" />
+          <ScalarProperty Name="ProbabilitySecond" ColumnName="ProbabilitySecond" />
+          <ScalarProperty Name="TimeStartCharging" ColumnName="TimeStartCharging" />
+          <ScalarProperty Name="TimeEndChargingExpect" ColumnName="TimeEndChargingExpect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drivers">
+      <EntityTypeMapping TypeName="CarChargingModel.Drivers">
+        <MappingFragment StoreEntitySet="Drivers">
+          <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+          <ScalarProperty Name="DriverName" ColumnName="DriverName" />
+          <ScalarProperty Name="DriverLogin" ColumnName="DriverLogin" />
+          <ScalarProperty Name="DriverPassword" ColumnName="DriverPassword" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="DriverStatus" ColumnName="DriverStatus" />
+          <ScalarProperty Name="Probability" ColumnName="Probability" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="CarChargingModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="ID_Driver" ColumnName="ID_Driver" />
+          <ScalarProperty Name="ID_Car" ColumnName="ID_Car" />
+          <ScalarProperty Name="ID_Charger" ColumnName="ID_Charger" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+          <ScalarProperty Name="TimeStartChargingExpect" ColumnName="TimeStartChargingExpect" />
+          <ScalarProperty Name="TimeChargingExpect" ColumnName="TimeChargingExpect" />
+          <ScalarProperty Name="TimeStartCharging" ColumnName="TimeStartCharging" />
+          <ScalarProperty Name="TimeEndCharging" ColumnName="TimeEndCharging" />
+          <ScalarProperty Name="TimeCharging" ColumnName="TimeCharging" />
+          <ScalarProperty Name="Kilowatt" ColumnName="Kilowatt" />
+          <ScalarProperty Name="ProbabilityOrder" ColumnName="ProbabilityOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

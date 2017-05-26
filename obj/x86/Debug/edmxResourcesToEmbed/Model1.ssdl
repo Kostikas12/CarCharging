@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarChargingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="ID_Car" />
+    </Key>
+    <Property Name="ID_Car" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Driver" Type="int" Nullable="false" />
+    <Property Name="CarType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CarBatteryLevel" Type="float" />
+    <Property Name="CarTimeToCharge" Type="float" />
+  </EntityType>
+  <EntityType Name="Chargers">
+    <Key>
+      <PropertyRef Name="ID_Charger" />
+    </Key>
+    <Property Name="ID_Charger" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChargerName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ChargerAddress" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ChargerGPS" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ChargerStatus" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NumAllPlaces" Type="int" Nullable="false" />
+    <Property Name="NumEmptyPlaces" Type="int" Nullable="false" />
+    <Property Name="NumOrderPlaces" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChargingNow">
+    <Key>
+      <PropertyRef Name="ID_Charging" />
+    </Key>
+    <Property Name="ID_Charging" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Driver" Type="int" Nullable="false" />
+    <Property Name="ID_Car" Type="int" Nullable="false" />
+    <Property Name="ID_Charger" Type="int" Nullable="false" />
+    <Property Name="ProbabilitySecond" Type="float" Nullable="false" />
+    <Property Name="TimeStartCharging" Type="datetime" Nullable="false" />
+    <Property Name="TimeEndChargingExpect" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Drivers">
+    <Key>
+      <PropertyRef Name="ID_Driver" />
+    </Key>
+    <Property Name="ID_Driver" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DriverName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="DriverLogin" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DriverPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="DriverStatus" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Probability" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID_Order" />
+    </Key>
+    <Property Name="ID_Order" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Driver" Type="int" Nullable="false" />
+    <Property Name="ID_Car" Type="int" Nullable="false" />
+    <Property Name="ID_Charger" Type="int" Nullable="false" />
+    <Property Name="OrderStatus" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="OrderTime" Type="datetime" Nullable="false" />
+    <Property Name="TimeStartChargingExpect" Type="datetime" Nullable="false" />
+    <Property Name="TimeChargingExpect" Type="float" Nullable="false" />
+    <Property Name="TimeStartCharging" Type="datetime" />
+    <Property Name="TimeEndCharging" Type="datetime" />
+    <Property Name="TimeCharging" Type="float" />
+    <Property Name="Kilowatt" Type="float" />
+    <Property Name="ProbabilityOrder" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Cars_Drivers">
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+    <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="ID_Driver" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="ID_Driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChargingNow_Chargers">
+    <End Role="Chargers" Type="Self.Chargers" Multiplicity="1" />
+    <End Role="ChargingNow" Type="Self.ChargingNow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chargers">
+        <PropertyRef Name="ID_Charger" />
+      </Principal>
+      <Dependent Role="ChargingNow">
+        <PropertyRef Name="ID_Charger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChargingNow_Drivers">
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+    <End Role="ChargingNow" Type="Self.ChargingNow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="ID_Driver" />
+      </Principal>
+      <Dependent Role="ChargingNow">
+        <PropertyRef Name="ID_Driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderNow_Chargers">
+    <End Role="Chargers" Type="Self.Chargers" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chargers">
+        <PropertyRef Name="ID_Charger" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ID_Charger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderNow_Drivers">
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="ID_Driver" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ID_Driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CarChargingModelStoreContainer">
+    <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Chargers" EntityType="Self.Chargers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChargingNow" EntityType="Self.ChargingNow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Drivers" EntityType="Self.Drivers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChargingNow_Chargers" Association="Self.FK_ChargingNow_Chargers">
+      <End Role="Chargers" EntitySet="Chargers" />
+      <End Role="ChargingNow" EntitySet="ChargingNow" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChargingNow_Drivers" Association="Self.FK_ChargingNow_Drivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="ChargingNow" EntitySet="ChargingNow" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderNow_Chargers" Association="Self.FK_OrderNow_Chargers">
+      <End Role="Chargers" EntitySet="Chargers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderNow_Drivers" Association="Self.FK_OrderNow_Drivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<сars.xml>
+  <Cars>
+    <ID_Car>1</ID_Car>
+    <ID_Driver>56</ID_Driver>
+    <CarType>audi</CarType>
+    <CarBatteryLevel>33</CarBatteryLevel>
+    <CarTimeToCharge />33</Cars>
+  <Cars>
+    <ID_Car>5</ID_Car>
+    <ID_Driver>56</ID_Driver>
+    <CarType>ford</CarType>
+    <CarBatteryLevel>22</CarBatteryLevel>
+    <CarTimeToCharge />22</Cars>
+</сars.xml>

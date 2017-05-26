@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CarCharging" Class="LinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\CarCharging.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="CarCharging.Properties.Settings" SettingsPropertyName="CarChargingConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cars" Member="Cars">
+    <Type Name="Car">
+      <Column Name="ID_Car" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_Driver" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarBatteryLevel" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CarTimeToCharge" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Driver_Car" Member="Driver" ThisKey="ID_Driver" OtherKey="ID_Driver" Type="Driver" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Chargers" Member="Chargers">
+    <Type Name="Charger">
+      <Column Name="ID_Charger" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChargerName" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="ChargerAddress" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="ChargerGPS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChargerStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumAllPlaces" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumEmptyPlaces" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumOrderPlaces" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Charger_ChargingNow" Member="ChargingNows" ThisKey="ID_Charger" OtherKey="ID_Charger" Type="ChargingNow" />
+      <Association Name="Charger_Order" Member="Orders" ThisKey="ID_Charger" OtherKey="ID_Charger" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChargingNow" Member="ChargingNows">
+    <Type Name="ChargingNow">
+      <Column Name="ID_Charging" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_Driver" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Car" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Charger" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProbabilitySecond" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStartCharging" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeEndChargingExpect" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Charger_ChargingNow" Member="Charger" ThisKey="ID_Charger" OtherKey="ID_Charger" Type="Charger" IsForeignKey="true" />
+      <Association Name="Driver_ChargingNow" Member="Driver" ThisKey="ID_Driver" OtherKey="ID_Driver" Type="Driver" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Drivers" Member="Drivers">
+    <Type Name="Driver">
+      <Column Name="ID_Driver" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DriverName" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="DriverLogin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DriverPassword" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DriverStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Probability" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Driver_Car" Member="Cars" ThisKey="ID_Driver" OtherKey="ID_Driver" Type="Car" />
+      <Association Name="Driver_ChargingNow" Member="ChargingNows" ThisKey="ID_Driver" OtherKey="ID_Driver" Type="ChargingNow" />
+      <Association Name="Driver_Order" Member="Orders" ThisKey="ID_Driver" OtherKey="ID_Driver" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Orders" Member="Orders">
+    <Type Name="Order">
+      <Column Name="ID_Order" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_Driver" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Car" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Charger" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderStatus" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStartChargingExpect" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeChargingExpect" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStartCharging" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeEndCharging" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeCharging" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Kilowatt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ProbabilityOrder" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Charger_Order" Member="Charger" ThisKey="ID_Charger" OtherKey="ID_Charger" Type="Charger" IsForeignKey="true" />
+      <Association Name="Driver_Order" Member="Driver" ThisKey="ID_Driver" OtherKey="ID_Driver" Type="Driver" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

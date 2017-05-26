@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6601b063eeb7451392841560762ded85" Name="Diagram1">
+        <EntityTypeShape EntityType="CarChargingModel.Cars" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarChargingModel.Chargers" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarChargingModel.ChargingNows" Width="1.5" PointX="6" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarChargingModel.Drivers" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarChargingModel.Orders" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="CarChargingModel.FK_Cars_Drivers" ManuallyRouted="false" />
+        <AssociationConnector Association="CarChargingModel.FK_ChargingNow_Chargers" ManuallyRouted="false" />
+        <AssociationConnector Association="CarChargingModel.FK_OrderNow_Chargers" ManuallyRouted="false" />
+        <AssociationConnector Association="CarChargingModel.FK_ChargingNow_Drivers" ManuallyRouted="false" />
+        <AssociationConnector Association="CarChargingModel.FK_OrderNow_Drivers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

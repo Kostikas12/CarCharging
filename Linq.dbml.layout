@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.125" name="Linq">
+  <DataContextMoniker Name="/LinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="caa202d6-908a-49d5-a859-a21994032a10" absoluteBounds="0.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LinqDataContext/Car" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6192f6c-6099-4907-b8d6-0d5ca07370d4" absoluteBounds="0.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2cf6aade-d97b-4b04-82f4-a16439ea8e1d" absoluteBounds="4.5, 3.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LinqDataContext/Charger" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2b5ee44-4c68-443b-b58c-12bae51e77a8" absoluteBounds="4.5150000000000006, 3.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e2bb8070-e28b-4cf6-9ade-446ad39f7da5" absoluteBounds="3.625, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LinqDataContext/ChargingNow" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3105203c-94f1-4dd3-8a59-3630d83c69a5" absoluteBounds="3.64, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.0625 : 3.5); (5.0625 : 3.15549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/Charger/Charger_ChargingNow" />
+      <nodes>
+        <classShapeMoniker Id="2cf6aade-d97b-4b04-82f4-a16439ea8e1d" />
+        <classShapeMoniker Id="e2bb8070-e28b-4cf6-9ade-446ad39f7da5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="42df3dfe-f284-49fb-85cc-b5afff330a61" absoluteBounds="0.875, 3.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LinqDataContext/Driver" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90c80f63-2e26-4910-addc-14a5c7f1efbc" absoluteBounds="0.89, 3.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.6875 : 3.125); (1.6875 : 2.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/Driver/Driver_Car" />
+      <nodes>
+        <classShapeMoniker Id="42df3dfe-f284-49fb-85cc-b5afff330a61" />
+        <classShapeMoniker Id="caa202d6-908a-49d5-a859-a21994032a10" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 3.125); (3.25 : 2.75); (3.25 : 3.53049967447917); (3.625 : 3.15549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/Driver/Driver_ChargingNow" />
+      <nodes>
+        <classShapeMoniker Id="42df3dfe-f284-49fb-85cc-b5afff330a61" />
+        <classShapeMoniker Id="e2bb8070-e28b-4cf6-9ade-446ad39f7da5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e8b41f01-cc56-400e-b73a-21725f1c1c32" absoluteBounds="1.875, 5.625, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/LinqDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21fd5b3f-1114-4bcb-9b72-318cb12d7780" absoluteBounds="1.8900000000000001, 6.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.84780110677083); (5.5 : 7.3910551875); (3.875 : 7.3910551875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/Charger/Charger_Order" />
+      <nodes>
+        <classShapeMoniker Id="2cf6aade-d97b-4b04-82f4-a16439ea8e1d" />
+        <classShapeMoniker Id="e8b41f01-cc56-400e-b73a-21725f1c1c32" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.375 : 5.28049967447917); (2.375 : 5.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/Driver/Driver_Order" />
+      <nodes>
+        <classShapeMoniker Id="42df3dfe-f284-49fb-85cc-b5afff330a61" />
+        <classShapeMoniker Id="e8b41f01-cc56-400e-b73a-21725f1c1c32" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
